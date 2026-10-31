@@ -1,3 +1,6 @@
+/* Menu button for phones (same behavior as klcautomation.net) */
+(function(){var t=document.querySelector('.top'),b=document.querySelector('.menu-btn');if(!t||!b)return;
+b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 /* G's Home Services: request form. No trackers, no outside scripts.
  *
  * HOW REQUESTS ARE SENT: change the ONE line below.
@@ -7,7 +10,7 @@
  *                The first request triggers a one-time "activate" email to that address; click it once.
  *   "demo"       sends nothing; the request is only shown on the page (for previews).
  */
-var FORM_MODE = "demo"; // PREVIEW: set back to "mailto" at launch
+var FORM_MODE = "demo";   // preview: nothing is sent. Change to "mailto" at launch.
 
 (function(){
   var f=document.getElementById('quote'); if(!f) return;
