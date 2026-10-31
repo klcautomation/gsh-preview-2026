@@ -1,0 +1,55 @@
+:root{--navy:#0f2a43;--teal:#0f766e;--teal-l:#14b8a6;--bg:#f7f9fc;--ink:#1b2733;--mut:#4b5b6b;--line:#d9e1ea;--ph:#fff4d6;--ph-b:#b7791f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:64px}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f5b544;outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:9}
+.skip:focus{left:8px}
+.preview{background:var(--ph);border-bottom:1px solid var(--ph-b);color:#5c3d00;font-size:14px;padding:8px 18px;text-align:center}
+.top{background:var(--navy);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:6px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:19px}
+.lang{color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:6px 14px;text-decoration:none;font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+.nav{list-style:none;margin:0;padding:0 0 8px;display:flex;flex-wrap:wrap;gap:4px 16px}
+.nav a{color:#d6e4f0;text-decoration:none;display:inline-block;padding:10px 0;min-height:44px}
+.nav a[aria-current=page]{color:#fff;border-bottom:3px solid var(--teal-l)}
+.hero{background:linear-gradient(160deg,var(--navy),#16446b);color:#fff;padding:32px 0 36px}
+.hero h1{font-size:clamp(28px,7vw,44px);line-height:1.15;margin:0 0 12px}
+.hero a:not(.btn){color:#9ff0e4}
+.lead{font-size:18px;color:#e2ecf5;max-width:40em}
+h1{font-size:clamp(26px,6vw,36px);line-height:1.2}
+h2{font-size:24px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border-radius:10px;background:var(--teal);color:#fff;font-weight:700;text-decoration:none;border:0;font-size:17px;cursor:pointer}
+.btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero .btn.alt{border-color:#fff}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.small{font-size:14px;color:inherit;opacity:.9}
+.ph{display:inline-block;background:var(--ph);color:#5c3d00;border:1px dashed var(--ph-b);border-radius:6px;padding:0 6px;font-size:.85em;font-weight:600}
+.cards{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:1fr}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:6px 0}
+.list li{margin:6px 0}
+.steps li{margin:8px 0}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:600;min-height:28px}
+.form{display:grid;gap:6px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;max-width:560px}
+.form label{font-weight:600;margin-top:8px}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid #8a9aab;border-radius:8px;min-height:44px;width:100%;background:#fff;color:var(--ink)}
+.demo-note{background:var(--ph);border:1px solid var(--ph-b);border-radius:10px;padding:12px 14px;max-width:560px}
+.err{color:#9b1c1c;font-weight:600}
+.log{margin-top:16px;background:#ecfdf5;border:1px solid #34d399;border-radius:12px;padding:14px 16px;max-width:560px}
+.log dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:8px 0}.log dt{font-weight:700}.log dd{margin:0}
+.foot{background:var(--navy);color:#d6e4f0;margin-top:48px;padding:24px 0 8px}
+.foot h2{font-size:16px;color:#fff;margin:10px 0 4px}
+.foot a{color:#9ff0e4}
+.foot .ph{font-size:.8em}
+.fgrid{display:grid;gap:8px;grid-template-columns:1fr}
+.fine{font-size:13px;opacity:.85}
+.callbar{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--navy);border-top:1px solid #23496e;z-index:5}
+.callbar a{flex:1;text-align:center;color:#fff;font-weight:700;text-decoration:none;padding:14px 6px;min-height:52px}
+.callbar a+a{background:var(--teal)}
+.cta-band{text-align:center;padding-bottom:8px}
+@media (min-width:700px){.cards{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:repeat(4,1fr)}body{padding-bottom:0}.callbar{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

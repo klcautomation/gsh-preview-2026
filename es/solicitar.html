@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"> <!-- PREVIEW: delete this one line at launch -->
+<title>Pedir cotización | G's Home Services</title>
+<meta name="description" content="Pida una cotización a G&#x27;s Home Services.">
+<meta property="og:title" content="G's Home Services">
+<meta property="og:description" content="Pida una cotización a G&#x27;s Home Services.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/og-image.png">
+<link rel="alternate" hreflang="en" href="../request.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0f2a43">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+ <div class="wrap bar">
+  <a class="brand" href="index.html"><img src="../favicon.svg" alt="" width="32" height="32"><span>G's Home Services</span></a>
+  <a class="lang" href="../request.html" hreflang="en" lang="en" aria-label="View this site in English">English</a>
+ </div>
+ <nav class="wrap" aria-label="Principal"><ul class="nav"><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="solicitar.html" aria-current="page">Pedir cotización</a></li></ul></nav>
+</header>
+<main id="main">
+<section class="wrap"><h1>Pedir una cotización</h1>
+<p>Llene el formulario y presione el botón. Su aplicación de correo se abre con la solicitud lista para enviar a Garrett. ¿Prefiere hablar? <a href="tel:+15026608352">Llame al (502) 660-8352</a>.</p>
+<form id="quote" class="form" novalidate data-lang="es" data-to="garrett@gshomeservice.com">
+<p class="small">Los campos con * son obligatorios.</p>
+<label for="f-name">Nombre *</label><input id="f-name" name="name" autocomplete="name" required>
+<label for="f-phone">Teléfono *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+<label for="f-town">Ciudad o código postal *</label><input id="f-town" name="town" autocomplete="address-level2" required>
+<label for="f-service">Servicio que necesita *</label>
+<select id="f-service" name="service" required><option value="">Elija uno</option><option>Limpieza de casas</option><option>Limpieza de mudanza</option><option>Limpieza comercial y de oficinas</option><option>Arreglos y reparaciones menores</option><option>Ventanas y canaletas</option><option>Alfombras, tapetes y tapicería</option><option>Otra cosa</option></select>
+<label for="f-urgency">¿Para cuándo?</label>
+<select id="f-urgency" name="urgency"><option>Flexible</option><option>Esta semana</option><option>Lo antes posible</option></select>
+<label for="f-time">Mejor hora para llamarle</label>
+<select id="f-time" name="callback"><option>Mañana</option><option>Tarde</option><option>Noche</option></select>
+<label for="f-lang">Idioma preferido</label>
+<select id="f-lang" name="language"><option>English</option><option selected>Español</option></select>
+<label for="f-msg">Cuéntenos sobre el trabajo</label><textarea id="f-msg" name="details" rows="4"></textarea>
+<p class="small">Esto es una solicitud, no una cita reservada. Garrett le contactará para confirmar el día y la hora. Sus datos solo se usan para responder a su solicitud.</p>
+<button type="submit" class="btn">Enviar solicitud</button>
+<p id="f-err" class="err" role="alert" hidden></p>
+</form>
+<div id="f-done" class="log" aria-live="polite" hidden></div>
+<noscript><p>Llame al <a href="tel:+15026608352">(502) 660-8352</a> o escriba a <a href="mailto:garrett@gshomeservice.com">garrett@gshomeservice.com</a>.</p></noscript>
+</section>
+</main>
+<footer class="foot">
+ <div class="wrap fgrid">
+  <div><h2>G's Home Services</h2><p>Limpieza del hogar y reparaciones menores.</p></div>
+  <div><h2>Contacto</h2>
+   <p>Llamar: <a href="tel:+15026608352">(502) 660-8352</a></p>
+   <p>Correo: <a href="mailto:garrett@gshomeservice.com">garrett@gshomeservice.com</a></p></div>
+  <div><h2>Zona de servicio</h2><p>El sur de Indiana, incluidos New Albany y Jeffersonville</p></div>
+ </div>
+ <p class="wrap fine">© 2026 G's Home Services</p>
+</footer>
+<div class="callbar"><a href="tel:+15026608352">Llamar</a><a href="solicitar.html">Pedir cotización</a></div>
+<script src="../app.js" defer></script>
+</body>
+</html>
