@@ -1,4 +1,4 @@
-/* G's Home Services: v2, modeled on the klcautomation.net design system.
+/* G's Home Services: v2.
    Same type, spacing, header, hero, card, button and footer patterns; G's own logo blue as the one accent. */
 @font-face{font-family:"Geist Sans";src:url(assets/fonts/geist-sans-variable.woff2) format("woff2");font-weight:100 900;font-display:swap}
 :root{
@@ -174,7 +174,7 @@ footer .legal{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
 [id]{scroll-margin-top:84px}
 picture{display:block}
 
-/* ===== v2.1 LIGHT THEME (Jacob: "a little lighter overall") — same KLC structure, light surfaces ===== */
+/* ===== v2.1 light theme ===== */
 :root{
   --bg:#ffffff;--bg2:#f6f5f2;--bg3:#eeece8;--deep:#f1f0ec;
   --ink:#1b1a18;--ink2:#56524d;--ink3:#6b665f;
