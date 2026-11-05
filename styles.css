@@ -227,3 +227,42 @@ footer .flogo{background:#1b1a18;padding:12px 14px;border-radius:12px;box-sizing
 .callbar{background:#fff;border-top:1px solid var(--line)}
 :focus-visible{outline:2px solid var(--blue-ink)}
 .skip:focus{background:var(--ink);color:#fff}
+/* services checklist (from Garrett's current site) */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.checklist{border-top:1px solid var(--line)}
+.ck-lede{color:var(--ink2);max-width:40em;margin:-18px 0 28px}
+.ck{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+.ck details+details{border-top:1px solid var(--line)}
+.ck summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;padding:20px clamp(18px,3vw,28px);font-size:18px;font-weight:550;letter-spacing:-.015em;position:relative}
+.ck summary::-webkit-details-marker{display:none}
+.ck summary:after{content:"+";margin-left:auto;font-size:24px;font-weight:300;color:var(--ink3);line-height:1}
+.ck details[open] summary:after{content:"–"}
+.ck summary:hover{background:var(--bg2)}
+.ck-n{font:500 12px/1 var(--font);color:var(--ink3);border:1px solid var(--line2);border-radius:var(--pill);padding:5px 9px}
+.ck table{width:100%;border-collapse:collapse;font-size:15px}
+.ck thead th{font:550 11px/1.2 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);background:var(--bg2);padding:12px 8px;text-align:center;border-top:1px solid var(--line)}
+.ck thead th:first-child{text-align:left;padding-left:clamp(18px,3vw,28px)}
+.ck tbody th{font-weight:400;text-align:left;padding:12px 8px 12px clamp(18px,3vw,28px);color:var(--ink)}
+.ck tbody tr{border-top:1px solid var(--line)}
+.ck td{width:15%;text-align:center;padding:12px 8px}
+.ck td.y:before{content:"✓";color:var(--blue-ink);font-weight:700;font-size:17px}
+.ck td.n:before{content:"–";color:#b9b3aa}
+.ck-foot{margin-top:18px}
+@media(max-width:620px){.ck table{font-size:14px;table-layout:fixed}.ck thead th:not(:first-child),.ck td{width:58px;padding:10px 2px}.ck thead th{font-size:9px;letter-spacing:.02em;padding:10px 2px;hyphens:auto}.ck tbody th,.ck thead th:first-child{padding-left:14px}.ck summary{padding:18px 14px}}
+/* reviews (linked to real public profiles) */
+.rv-plat,.rv-quotes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rv-plat{margin-bottom:20px}
+.rv-plat a,.rv-plat .rv-ph>div{display:flex;flex-direction:column;gap:4px;height:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:20px;padding:22px 24px;background:#fff;text-decoration:none;color:var(--ink)}
+.rv-plat a:hover,.rv-quotes a:hover{border-color:var(--ink3)}
+.rv-plat b{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:550}
+.rv-score{font-size:36px;font-weight:500;letter-spacing:-.03em;line-height:1.1}.rv-score small{font-size:15px;color:var(--ink3)}
+.rv-n{color:var(--ink2);font-size:15px}
+.rv-go{margin-top:auto;padding-top:10px;font-size:14px;font-weight:550;color:var(--blue-ink)}
+.rv-ph>div{border-style:dashed!important;background:transparent!important}
+.rv-ph .rv-go{color:#8a6a00;font-weight:500}
+.rv-quotes a{display:flex;flex-direction:column;height:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:20px;padding:24px;background:#fff;text-decoration:none;color:var(--ink)}
+.rv-quotes blockquote{margin:0 0 18px;font-size:16px;line-height:1.55}
+.rv-who{margin-top:auto;font-size:13.5px;color:var(--ink3)}.rv-who b{color:var(--ink);font-weight:550}
+.reviews .small{margin-top:18px}
+@media(max-width:860px){.rv-plat,.rv-quotes{grid-template-columns:1fr}}
+.reviews{border-top:1px solid var(--line)}
