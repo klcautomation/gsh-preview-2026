@@ -271,3 +271,15 @@ footer .flogo{background:#1b1a18;padding:12px 14px;border-radius:12px;box-sizing
 .offer .subs li{font-size:13px;line-height:1.2;color:var(--ink2);border:1px solid var(--line2);border-radius:var(--pill);padding:6px 10px;background:#fff}
 .offer .svc-link{margin-top:14px;font-size:14px;font-weight:550;color:var(--blue-ink);text-decoration:none}
 .offer .svc-link:hover{text-decoration:underline}
+
+/* Native collapsible service categories: usable without JavaScript. */
+.service-accordions .offer{display:block;padding:0;align-self:start}
+.service-category{width:100%}
+.service-category summary{display:flex;align-items:center;gap:16px;cursor:pointer;padding:24px;list-style:none}
+.service-category summary::-webkit-details-marker{display:none}
+.service-category summary::after{content:"+";margin-left:auto;font-size:24px}
+.service-category[open] summary::after{content:"−"}
+.service-category summary:focus-visible{outline:3px solid var(--blue-ink);outline-offset:-4px;border-radius:16px}
+.service-category summary .num{margin:0}.service-category summary h3{margin:0;font-size:22px}
+.service-content{padding:0 24px 24px}.service-content .subs{margin-top:0}
+.service-content .svc-link{display:inline-block}
