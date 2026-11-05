@@ -266,3 +266,8 @@ footer .flogo{background:#1b1a18;padding:12px 14px;border-radius:12px;box-sizing
 .reviews .small{margin-top:18px}
 @media(max-width:860px){.rv-plat,.rv-quotes{grid-template-columns:1fr}}
 .reviews{border-top:1px solid var(--line)}
+/* sub-categories under each main service */
+.offer .subs{list-style:none;margin:16px 0 0;padding:14px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;width:100%}
+.offer .subs li{font-size:13px;line-height:1.2;color:var(--ink2);border:1px solid var(--line2);border-radius:var(--pill);padding:6px 10px;background:#fff}
+.offer .svc-link{margin-top:14px;font-size:14px;font-weight:550;color:var(--blue-ink);text-decoration:none}
+.offer .svc-link:hover{text-decoration:underline}
