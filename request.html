@@ -30,7 +30,7 @@
 <section class="pagehead"><div class="wrap"><span class="eyebrow">Request a quote</span><h1>Tell us about the job.</h1>
 <p class="lede">Fill this out and Garrett gets back to you. Prefer to talk? <a href="tel:+15026608352">Call (502) 660-8352</a>.</p></div></section>
 <section><div class="wrap">
-<form id="quote" class="form" novalidate data-lang="en" data-to="garrett@gshomeservice.com">
+<form id="quote" class="form" novalidate data-lang="en" data-to="sales@gshomeservice.com">
 <p class="small">Fields marked * are required.</p>
 <label for="f-name">Name *</label><input id="f-name" name="name" autocomplete="name" required>
 <label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
@@ -44,11 +44,11 @@
 <label for="f-lang">Preferred language</label>
 <select id="f-lang" name="language"><option selected>English</option><option>Español</option></select>
 <label for="f-msg">Tell us about the job</label><textarea id="f-msg" name="details" rows="4"></textarea>
+<p class="small send-how"><strong>How this works:</strong> tapping the button opens a pre-filled email to sales@gshomeservice.com in your email app. <strong>You must press Send in your email app</strong> for us to get it.</p>
 <p class="small">This is a request, not a booked appointment. Garrett will contact you to confirm the day and time. Your details are used only to answer your request.</p>
-<button type="button" class="btn big">Send request</button>
+<button type="submit" class="btn big" disabled>Open email to send request</button>
 <p id="f-err" class="err" role="alert" hidden></p>
 </form>
-<p class="small preview-note"><strong>Preview: this form does not send.</strong></p>
 <div id="f-done" class="log" aria-live="polite" hidden></div>
 <noscript><p>Please call <a href="tel:+15026608352">(502) 660-8352</a> or email <a href="mailto:sales@gshomeservice.com">sales@gshomeservice.com</a>.</p></noscript>
 </div></section>
