@@ -30,7 +30,7 @@
 <section class="pagehead"><div class="wrap"><span class="eyebrow">Pedir cotización</span><h1>Cuéntenos sobre el trabajo.</h1>
 <p class="lede">Llene el formulario y Garrett se comunica con usted. ¿Prefiere hablar? <a href="tel:+15026608352">Llame al (502) 660-8352</a>.</p></div></section>
 <section><div class="wrap">
-<form id="quote" class="form" novalidate data-lang="es" data-to="garrett@gshomeservice.com">
+<form id="quote" class="form" novalidate data-lang="es" data-to="sales@gshomeservice.com">
 <p class="small">Los campos con * son obligatorios.</p>
 <label for="f-name">Nombre *</label><input id="f-name" name="name" autocomplete="name" required>
 <label for="f-phone">Teléfono *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
@@ -45,10 +45,10 @@
 <select id="f-lang" name="language"><option>English</option><option selected>Español</option></select>
 <label for="f-msg">Cuéntenos sobre el trabajo</label><textarea id="f-msg" name="details" rows="4"></textarea>
 <p class="small">Esto es una solicitud, no una cita reservada. Garrett le contactará para confirmar el día y la hora. Sus datos solo se usan para responder a su solicitud.</p>
-<button type="button" class="btn big">Enviar solicitud</button>
+<p class="small send-how"><strong>Cómo funciona:</strong> al tocar el botón se abre un correo ya llenado para sales@gshomeservice.com en su aplicación de correo. <strong>Debe presionar Enviar en su aplicación de correo</strong> para que lo recibamos.</p>
+<button type="submit" class="btn big" disabled>Abrir correo para enviar solicitud</button>
 <p id="f-err" class="err" role="alert" hidden></p>
 </form>
-<p class="small preview-note"><strong>Vista previa: este formulario no envía nada.</strong></p>
 <div id="f-done" class="log" aria-live="polite" hidden></div>
 <noscript><p>Llame al <a href="tel:+15026608352">(502) 660-8352</a> o escriba a <a href="mailto:sales@gshomeservice.com">sales@gshomeservice.com</a>.</p></noscript>
 </div></section>
